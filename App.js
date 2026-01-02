@@ -124,11 +124,11 @@ async function merge(oparr, left, mid, right) {
         if (L[i] <= R[j]) {
           oparr[k].style.height = `${L[i]}px`;
           i++;
-          await sleep(x*1);
+          await sleep(x*0.5);
         } else {
           oparr[k].style.height = `${R[j]}px`;
           j++;
-          await sleep(x*1);
+          await sleep(x*0.5);
         }
         k++;
     }
@@ -136,13 +136,13 @@ async function merge(oparr, left, mid, right) {
         oparr[k].style.height = `${ L[i] }px`;
         i++;
       k++;
-      await sleep(x*1);
+      await sleep(x*0.5);
     }
     while (j < n2) {
       oparr[k].style.height = `${ R[j] }px`;
       j++;
       k++;
-      await sleep(x*1);
+      await sleep(x*0.5);
     }
 }
 async function mergeSort(oparr, left, right) {
