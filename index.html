@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+</style>
+  <style>
+    body{
+      background-color:#000;
+      font-family: "Atkinson Hyperlegible Mono";
+      color: white;
+    }
+    h2{
+      font-family: "Atkinson Hyperlegible Mono";
+
+    }
+    #box{
+      margin: auto auto ;
+      width: 90vw;
+      height: 80vh;
+      border: 2px solid black;
+      display: flex;
+      /* align-content:end; */
+      align-items: baseline;
+      animation-timing-function: ease-in;
+    }
+    .slice{
+      background-color: green;
+      width: 0.1vw;
+      height: 70%;
+      margin-inline:  auto;
+      /* justify-content: right; */
+      padding: none;
+      
+    }
+    .heading{
+      margin:auto;
+    }
+  </style>
+</head>
+<body>
+  <h2 id="heading">hey! this is my visualizer for few famous sorting algorithms!</h2>
+  Enter number of elements in the array:
+  <input type="number" name="200" id="inp" placeholder="default value:200">
+  <button onclick="ddo()" id="doing">set</button>
+  <div id="box">
+    
+  </div>
+  <button id="bubble" onclick="bsort()">bubble sort</button>
+  <button id="selection" onclick="ssort()">selection sort</button>
+  <button id="merger" onclick="msort()">merge sort</button>
+  <button id="quick" onclick="qsort()">quick sort</button>
+  <button onclick="refresh()" id="ref">refresh</button>
+  <button onclick="xx()">2x speed</button>
+  <button onclick="x1()">0.5x speed</button>
+  <button onclick="stop()">reset</button>
+</body>
+<script src="App.js"></script>
+</html>
